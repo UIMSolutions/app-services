@@ -1,1 +1,1 @@
-module dbs.myname.helpers;
+module dbs.services.helpers;
