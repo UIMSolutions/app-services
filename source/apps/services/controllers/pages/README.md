@@ -1,2 +1,2 @@
-# Package 📦 apps.myname.controllers.pages
+# Package 📦 apps.services.controllers.pages
 

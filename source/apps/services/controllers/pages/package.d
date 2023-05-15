@@ -1,1 +1,1 @@
-module apps.myname.controllers.pages;
+module apps.services.controllers.pages;
