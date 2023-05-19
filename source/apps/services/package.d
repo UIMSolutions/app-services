@@ -18,11 +18,11 @@ public import uim.servers;
 public import langs.javascript;
 
 public {
-  import apps.srv.controllers;
-  import apps.srv.helpers;
-  import apps.srv.routers;
-  import apps.srv.tests;
-  import apps.srv.views;
+  import apps.services.controllers;
+  import apps.services.helpers;
+  import apps.services.routers;
+  import apps.services.tests;
+  import apps.services.views;
 }
 
 DApp servicesApp;
