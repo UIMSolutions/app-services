@@ -8,14 +8,14 @@ module apps.services.controllers.pages.error;
 import apps.services;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DSRVErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("SRVErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(SRVErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("SRVErrorPageController"));

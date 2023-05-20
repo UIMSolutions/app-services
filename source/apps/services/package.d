@@ -25,11 +25,11 @@ public {
   import apps.services.views;
 }
 
-DApp servicesApp;
 static this() {
-  servicesApp = App
+  AppRegistry.register(  
+    App
     .name("servicesApp")
     .rootPath("/apps/services")
     .addRoute(Route("", HTTPMethod.GET, SRVIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, SRVIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, SRVIndexPageController)));
 }

@@ -8,14 +8,14 @@ module apps.services.controllers.pages.index;
 import apps.services;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DSRVIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("SRVIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(SRVIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("SRVIndexPageController"));
