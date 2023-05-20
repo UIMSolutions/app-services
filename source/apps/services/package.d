@@ -30,6 +30,6 @@ static this() {
     App
     .name("servicesApp")
     .rootPath("/apps/services")
-    .addRoute(Route("", HTTPMethod.GET, SRVIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, SRVIndexPageController)));
+    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
 }

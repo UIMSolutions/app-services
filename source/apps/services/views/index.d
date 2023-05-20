@@ -8,11 +8,11 @@ module apps.services.views.index;
 import apps.services;
 @safe:
 
-class DSRVIndexView : DView {
-  mixin(ViewThis!("SRVIndexView"));
+class DIndexView : DView {
+  mixin(ViewThis!("IndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DSRVIndexView~":DSRVIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DIndexView~":DIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -20,4 +20,4 @@ class DSRVIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("SRVIndexView"));
+mixin(ViewCalls!("IndexView"));
