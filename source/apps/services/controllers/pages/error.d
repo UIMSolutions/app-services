@@ -8,7 +8,7 @@ module apps.services.controllers.pages.error;
 import apps.services;
 @safe:
 
-class DSRVErrorPageController : DAPPPageController {
+class DSRVErrorPageController : DPageController {
   mixin(ControllerThis!("SRVErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
