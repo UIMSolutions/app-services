@@ -27,9 +27,10 @@ public {
 
 static this() {
   AppRegistry.register("apps.services",  
-    App
-    .name("servicesApp")
-    .rootPath("/apps/services")
-    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
+    App("servicesApp", "/apps/services")
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
